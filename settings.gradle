@@ -1,0 +1,8 @@
+rootProject.name = 'RSocketLatencyBenchmarking'
+include 'rsocket-server-benchmark'
+include 'rsocket-benchmark-cli'
+include 'xyz'
+include 'common'
+include 'aop-test'
+include 'spring-aop-test'
+

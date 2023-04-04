@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.piotrkwalczak.rsocket.benchmark'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starters:2.2.13.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-aop:2.7.6'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket:2.7.6'
+    implementation 'org.springframework.boot:spring-boot-starter-rsocket:2.7.6'
+    implementation 'org.springframework.boot:spring-boot-starter-test:2.7.6'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
